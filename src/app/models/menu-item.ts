@@ -3,7 +3,8 @@ export interface MenuItem {
   name: string;
   description: string;
   price: number;
-  category: 'burger' | 'combo' | 'fries' | 'soda';
+  category: string;
+  image: string;
   options?: {
     size?: 'small' | 'medium' | 'large';
     flavor?: 'coca-cola' | 'sprite' | 'fanta' | 'dr-pepper';
@@ -19,6 +20,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Hamburguesa con queso americano, lechuga, tomate, cebolla, mayonesa y catsup',
     price: 89,
     category: 'burger',
+    image: '',
     options: {
       type: 'single'
     }
@@ -29,6 +31,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Doble hamburguesa con queso americano, lechuga, tomate, cebolla, mayonesa y catsup',
     price: 119,
     category: 'burger',
+    image: '',
     options: {
       type: 'double'
     }
@@ -39,6 +42,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Hamburguesa con queso americano, tocino, aros de cebolla, salsa BBQ y mayonesa',
     price: 129,
     category: 'burger',
+    image: '',
     options: {
       type: 'single'
     }
@@ -50,6 +54,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Famous Star con papas y refresco',
     price: 139,
     category: 'combo',
+    image: '',
     options: {
       size: 'medium'
     }
@@ -60,6 +65,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Double Famous Star con papas y refresco',
     price: 169,
     category: 'combo',
+    image: '',
     options: {
       size: 'medium'
     }
@@ -71,6 +77,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Papas fritas naturales',
     price: 49,
     category: 'fries',
+    image: '',
     options: {
       size: 'small'
     }
@@ -81,6 +88,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Papas fritas naturales',
     price: 59,
     category: 'fries',
+    image: '',
     options: {
       size: 'medium'
     }
@@ -91,6 +99,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Papas fritas naturales',
     price: 69,
     category: 'fries',
+    image: '',
     options: {
       size: 'large'
     }
@@ -102,6 +111,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Refresco de cola',
     price: 39,
     category: 'soda',
+    image: '',
     options: {
       size: 'small',
       flavor: 'coca-cola'
@@ -113,6 +123,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Refresco de cola',
     price: 49,
     category: 'soda',
+    image: '',
     options: {
       size: 'medium',
       flavor: 'coca-cola'
@@ -124,6 +135,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Refresco de cola',
     price: 59,
     category: 'soda',
+    image: '',
     options: {
       size: 'large',
       flavor: 'coca-cola'

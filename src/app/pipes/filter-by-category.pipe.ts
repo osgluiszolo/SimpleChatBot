@@ -1,11 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { MenuItem } from '../models/menu-item';
 
 @Pipe({
-  name: 'filterByCategory'
+  name: 'filterByCategory',
+  standalone: true
 })
 export class FilterByCategoryPipe implements PipeTransform {
-  transform(items: MenuItem[], category: string): MenuItem[] {
+  transform(items: any[], category: string): any[] {
     if (!items || !category) {
       return items;
     }
